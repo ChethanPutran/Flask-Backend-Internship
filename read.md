@@ -1,6 +1,6 @@
 ## Enabling postgis extension
 
-CREATE EXTENSION postgis;/
+CREATE EXTENSION postgis;
 CREATE EXTENSION postgis_topology;
 
 # Routes
