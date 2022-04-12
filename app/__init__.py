@@ -29,7 +29,7 @@ def create_app():
 
         
         #Creating tables for the first time
-        db.create_all()
+        #db.create_all()
 
         #Registering blueprints    
         app.register_blueprint(post)

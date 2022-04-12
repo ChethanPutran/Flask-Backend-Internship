@@ -14,7 +14,7 @@ class Post(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     message=db.Column(db.String(120),nullable = False)
     location=db.Column(Geography(geometry_type='POINT',srid=4326),nullable = False)
-    created_at = db.Column(db.DateTime, nullable = False, default = datetime.strftime(datetime.today(), "%m/%d/%Y, %H:%M:%S"))
+    created_at = db.Column(db.DateTime, nullable = False, default = datetime.strftime(datetime.today(), "%d-%m-%y, %H:%M:%S"))
     
     def __init__(self,message,longitude,latitude):
         self.message = message
